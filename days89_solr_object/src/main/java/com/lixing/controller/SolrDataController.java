@@ -34,7 +34,7 @@ public class SolrDataController {
         if (!StringUtils.isNullOrEmpty(keywords)){
             keywords = new String(keywords.getBytes("ISO-8859-1"),"UTF-8");
         }
-
+        System.out.println("111111111");
         return solrService.getDataFromSolr(keywords,pageNum,pagesize);
     }
 }
